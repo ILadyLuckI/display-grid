@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body {
+    display: grid;
+    font-family: 'Tilt Neon', cursive;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    grid-gap: 16px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 100vh auto;
+    background: #19F7E7;
+}
+
+.header {
+    grid-area: header;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.header, .aside, .main, .footer {
+    background: #420039;
+    color: #F7CD19;
+    border-style: groove;
+}
